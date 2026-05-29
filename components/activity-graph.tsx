@@ -22,7 +22,7 @@ export function ActivityGraph() {
       {activity.map((level, index) => (
         <motion.span
           key={`${level}-${index}`}
-          initial={{ opacity: 0, scale: 0.65 }}
+          initial={{ opacity: 1, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 320, damping: 20, delay: index * 0.01 }}
           className={`aspect-square rounded-[4px] ${tones[level]} ring-1 ring-white/5`}
